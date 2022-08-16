@@ -1,0 +1,47 @@
+/* .mainDiv{
+    display: flex;
+    justify-content: ;
+} */
+.mainHeading{
+    text-align: center;
+    margin-top: 3rem;
+}
+.jobListDiv{
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.card-date{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+}
+.card{
+    height: 95%;
+}
+.card:hover{
+    border: 2px solid red;
+}
+.loadMoreButtonDiv{
+    display: flex;
+    justify-content: center;
+}
+.cardLink{
+    color: black;
+}
+.cardLink:hover{
+    text-decoration: none;
+    color: black;
+}
+.loadMoreButton:hover{
+    border: 2px solid blue;
+}
