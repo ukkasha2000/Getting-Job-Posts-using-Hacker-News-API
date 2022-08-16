@@ -12,7 +12,6 @@ const Home = () => {
     const loadMore = () => {
         initialCount = finalCount;
         finalCount += 6;
-        console.log(initialCount, finalCount, "count")
         fetchPostById(initialCount, finalCount, postIDs);
     }
     useEffect(() => {
