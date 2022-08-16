@@ -4,8 +4,6 @@ import JobCard from './JobCard';
 
 let initialCount = 0, finalCount = 9;
 const Home = () => {
-    // let [initialCount,setInitialCount] = useState(0);
-    // let [finalCount, setFinalCount] = useState(9);
     const [postIDs, setPostIDs] = useState([]);
     const [postsData, setPostsData] = useState([]);
     const axiosInstance = axios.create({
@@ -17,7 +15,6 @@ const Home = () => {
         console.log(initialCount, finalCount, "count")
         fetchPostById(initialCount, finalCount, postIDs);
     }
-    // const [postsDataURL, setPostsDataURL] = useState([]);
     useEffect(() => {
         async function getpostsID() {
             await axios.get('https://hacker-news.firebaseio.com/v0/jobstories.json')
@@ -44,7 +41,6 @@ const Home = () => {
                 })
                     .then((res) => {
                         resolve(res?.data);
-                        // console.log(countData[index])
                     })
                     .catch((err) => {
                         reject(err);
@@ -59,7 +55,7 @@ const Home = () => {
                 });
             })
             .catch((err) => {
-                console.log(err, "errerrerr");
+                console.log(err);
             });
     };
     return (
