@@ -5,7 +5,6 @@ const JobCard = ({ data }) => {
     if (data.title.includes(')')) {
         text1 = data.title.split(')');
         check = true;
-        // console.log(text[0],"AA",text[1]);
     }
     else {
         text2 = data.title.split('is');
